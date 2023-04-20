@@ -1610,9 +1610,10 @@ a {
   background-color: #ffffff;
 }
 .cid-tBRBBpjRNI blockquote {
-  border-color: #6592e6;
+  border-color: #9b111e;
   border-radius: 4px;
   background-color: #fafafa;
+  border-style: 3px;
 }
 .cid-tBRByZeOif {
   padding-top: 4rem;
@@ -1646,7 +1647,7 @@ a {
 .cid-tBRByZeOif .mbr-iconfont {
   display: block;
   font-size: 5rem;
-  color: #6592e6;
+  color: black;
   margin-bottom: 2rem;
 }
 .cid-tBRByZeOif .card-wrapper {

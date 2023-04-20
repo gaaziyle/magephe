@@ -204,7 +204,60 @@ figure {
 figure[mbr-media-size] {
   transition: width 0.1s;
 }
+.label {
+  display: block;
 
+}
+
+h1 {
+  color: white;
+}
+
+.holder {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.checkbox {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 60px;
+  background: #E0DCDC;
+  overflow: hidden;
+}
+
+.checkbox:not(:last-child) {
+  border-bottom: 2px solid white;
+}
+
+.check {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  opacity: 0;
+}
+
+.label span {
+  position: absolute;
+  margin-top: 15px;
+}
+
+.path1 {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  transition: .5s all;
+}
+
+.path2 {
+  stroke-dasharray: 1800;
+  stroke-dashoffset: 1800;
+  transition: .5s all;
+}
+
+.check:checked+label svg g path {
+  stroke-dashoffset: 0;
+}
 img,
 iframe {
   display: block;
@@ -215,9 +268,17 @@ iframe {
   background-color: transparent;
   border: none;
 }
-
+#image2-8{
+  height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('../../images/commercial-building-downtown-district-with-cloud-reflection.jpg');
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
 .card-box {
   width: 100%;
+  display: grid;
+  place-items: center;
 }
 
 .card-img {
@@ -301,7 +362,27 @@ iframe {
 .btn-form:hover {
   cursor: pointer;
 }
-
+.first_section_btn {
+  
+}
+blockquote {
+  overflow-y: hidden;
+  height: 20vh;
+}
+.read_resume{
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent, white);
+  width: 100%;
+  left: 0;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 600;
+  padding: 20px 0px;
+  cursor: pointer;
+  color: #9b111e;
+  z-index: 10;
+}
 nav .mbr-section-btn {
   margin-left: 0rem;
   margin-right: 0rem;
@@ -808,9 +889,11 @@ form .row [class*=col] {
 }
 
 form .mbr-section-btn {
+  
   margin: 0;
   padding-left: 0.6rem;
   padding-right: 0.6rem;
+  
 }
 
 form .btn {
