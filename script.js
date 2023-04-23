@@ -60,3 +60,7 @@ sr.reveal('#card_box_school', {
   reset: true
 })
 
+
+
+ const $svg = $('svg').drawsvg();
+        $svg.drawsvg('animate');

@@ -446,8 +446,8 @@ nav .mbr-section-btn {
 
 /*! Scroll to top arrow */
 .mbr-arrow-up {
-  bottom: 25px;
-  right: 90px;
+  bottom: 10px;
+  right: 25px;
   position: fixed;
   text-align: right;
   z-index: 5000;
@@ -533,8 +533,8 @@ nav .mbr-section-btn {
   display: block;
   border-bottom: 2.5px solid #fff;
   border-left: 2.5px solid #fff;
-  width: 27.8%;
-  height: 27.8%;
+  width: 20.8%;
+  height: 20.8%;
   left: 50%;
   top: 51%;
   transform: translateY(-30%) translateX(-50%) rotate(135deg);
@@ -697,7 +697,22 @@ nav .mbr-section-btn {
   z-index: 10;
   display: -webkit-flex;
 }
-
+.footer_img img {
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  font-family: "montserrat";
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  
+}
 .carousel-controls {
   display: -webkit-flex;
 }
@@ -737,7 +752,23 @@ input[type=range] {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-
+.col-md-3 {
+  margin: 5px;
+  background-color: black;
+  opacity: 1;
+  border-radius: 100%;
+  height: 165px !important;
+  color: black;
+  text-align: center;
+}
+.col-md-3 p {
+  background-color: white;
+  font-family: "montserrat";
+  color: black;
+  position: absolute;
+  bottom: -55px;
+  width: 100%;
+}
 .modal-dialog,
 .modal-content {
   height: 100%;
@@ -1043,4 +1074,81 @@ blockquote {
 	padding: 0;
 	top: 0;
 	left: -2400px;
+}
+
+.team{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 10px;
+}
+.our_team {
+  text-align: center;
+  font-family: "montserrat";
+  color: black;
+}
+.cart_team {
+  background-color: rgba(238, 238, 238, 0.432);
+  width: 45%;
+  height: 20vh;
+  padding: 10px 20px;
+  border-radius:5px;
+  display: flex;
+  align-items: center;
+}
+.cart_team img {
+  width: 15%;
+  border-radius: 50%;
+}
+.cart_team_texts{
+  font-family: "Montserrat";
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+}
+.cart_team_texts p {
+  margin: 10px;
+}
+.cart_team_texts p a { 
+display: flex;
+align-items: center;
+
+}
+.cart_team_texts p a ion-icon {
+  margin-right: 5px;
+}
+@media (max-width: 600px) {
+  .team {
+    display: grid;
+    place-items: center;
+  }
+  .cart_team {
+    display: grid;
+    place-items: center;
+    height: 30vh;
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .cart_team_texts {
+    display: grid;
+    text-align: center;
+  }
+  .cart_team_texts p a {
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .col-md-3 {
+    width: 35%;
+    margin: 40px;
+    display: grid;
+    place-items: center;
+
+  }
+  .col-md-3 p {
+    position: absolute;
+    bottom: -55px;
+  }
 }

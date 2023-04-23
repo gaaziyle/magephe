@@ -542,6 +542,7 @@ a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-cap
 }
 .alert-success {
   background-color: #70c770;
+  border-radius: 10px;
 }
 .alert-info {
   background-color: #4479d9;
@@ -629,6 +630,10 @@ blockquote {
 }
 .mbr-form .input-group-btn a.btn:hover {
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+}
+::selection {
+  background-color: #9b111e;
+  color: white;
 }
 .mbr-form .input-group-btn button[type="submit"] {
   border-radius: 100px !important;
@@ -1088,7 +1093,6 @@ a {
 }
 .cid-tBREeDDoAS {
   padding-top: 5rem;
-  padding-bottom: 5rem;
   background-color: #ffffff;
 }
 .cid-tBREeDDoAS .mbr-fallback-image.disabled {
@@ -1733,7 +1737,6 @@ a {
   transition: all 0.3s;
   height: fit-content;
   padding: 1rem 0;
-  opacity: 0.7;
   margin-bottom: 1rem;
 }
 @media (min-width: 992px) {
@@ -1813,32 +1816,37 @@ a {
   top: 0;
 }
 .cid-tBRBViWQGY .bg-facebook {
-  background: #1778f2;
-  color: #ffffff;
+  color: #1778f2;
+  background-color: transparent;
 }
 .cid-tBRBViWQGY .bg-facebook:hover {
-  background: #0b60cb;
+  background-color: transparent;
 }
 .cid-tBRBViWQGY .bg-twitter {
-  background: #1da1f2;
-  color: #ffffff;
+  color: #1da1f2;
+  background-color: transparent;
 }
 .cid-tBRBViWQGY .bg-twitter:hover {
-  background: #0c85d0;
+  background-color: transparent;
 }
 .cid-tBRBViWQGY .bg-instagram {
-  background: #f00075;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    /* Also define standard property for compatibility */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   color: #ffffff;
 }
 .cid-tBRBViWQGY .bg-instagram:hover {
-  background: #bd005c;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    /* Also define standard property for compatibility */
+    background-clip: text;
 }
 .cid-tBRBViWQGY .bg-youtube {
-  background: #ff0000;
-  color: #ffffff;
+  color: #ff0000;
 }
 .cid-tBRBViWQGY .bg-youtube:hover {
-  background: #cc0000;
 }
 .cid-tBRBViWQGY .iconfont-wrapper {
   display: inline-block;
